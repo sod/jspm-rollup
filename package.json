@@ -8,6 +8,28 @@
     "jspm": "^0.17.0-beta.22"
   },
   "devDependencies": {},
+  "jspm": {
+    "name": "jspm-17-rollup",
+    "main": "index.ts",
+    "dependencies": {},
+    "devDependencies": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.16"
+    },
+    "overrides": {
+      "npm:typescript@1.8.10": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
