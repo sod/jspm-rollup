@@ -30,6 +30,7 @@ SystemJS.config({
     "jspm-17-rollup": {
       "main": "index.ts",
       "format": "esm",
+      "defaultExtension": "ts",
       "meta": {
         "*.ts": {
           "loader": "plugin-typescript"
