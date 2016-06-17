@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "jspm": "^0.17.0-beta.22"
+    "jspm": "^0.17.0-beta.22",
+    "serve": "^1.4.0"
   },
   "devDependencies": {},
   "jspm": {
