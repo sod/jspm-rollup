@@ -46,6 +46,7 @@ SystemJS.config({
     "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
     "crypto": "github:jspm/nodelibs-crypto@0.2.0-alpha",
     "events": "github:jspm/nodelibs-events@0.2.0-alpha",
+    "frankwallis/plugin-typescript": "github:frankwallis/plugin-typescript@4.0.16",
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
     "os": "github:jspm/nodelibs-os@0.2.0-alpha",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
@@ -259,6 +260,11 @@ SystemJS.config({
     "github:jspm/nodelibs-string_decoder@0.2.0-alpha": {
       "map": {
         "string_decoder-browserify": "npm:string_decoder@0.10.31"
+      }
+    },
+    "github:frankwallis/plugin-typescript@4.0.16": {
+      "map": {
+        "typescript": "npm:typescript@1.9.0-dev.20160617-1.0"
       }
     }
   }
