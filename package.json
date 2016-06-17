@@ -6,7 +6,8 @@
   "main": "index.js",
   "dependencies": {
     "jspm": "^0.17.0-beta.22",
-    "serve": "^1.4.0"
+    "serve": "^1.4.0",
+    "typescript": "^1.8.10"
   },
   "devDependencies": {},
   "jspm": {
@@ -15,16 +16,29 @@
     "dependencies": {
       "@angular/common": "npm:@angular/common@^2.0.0-rc.2",
       "reflect-metadata": "npm:reflect-metadata@^0.1.3",
-      "rxjs-es": "npm:rxjs-es@5.0.0-beta.6"
+      "rxjs-es": "npm:rxjs-es@5.0.0-beta.6",
+      "typescript": "npm:typescript@^1.9.0-dev.20160409"
     },
     "devDependencies": {
-      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
       "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.16"
     },
     "peerDependencies": {
       "@angular/core": "npm:@angular/core@^2.0.0-rc.2",
+      "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
+      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+      "child_process": "github:jspm/nodelibs-child_process@^0.2.0-alpha",
+      "constants": "github:jspm/nodelibs-constants@^0.2.0-alpha",
+      "crypto": "github:jspm/nodelibs-crypto@^0.2.0-alpha",
+      "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
+      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
       "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
+      "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
+      "string_decoder": "github:jspm/nodelibs-string_decoder@^0.2.0-alpha",
+      "util": "github:jspm/nodelibs-util@^0.2.0-alpha",
+      "vm": "github:jspm/nodelibs-vm@^0.2.0-alpha",
       "zone.js": "npm:zone.js@^0.6.6"
     },
     "overrides": {
@@ -50,6 +64,11 @@
         "main": "esm/index.js",
         "format": "esm"
       },
+      "npm:inherits@2.0.1": {
+        "ignore": [
+          "test.js"
+        ]
+      },
       "npm:reflect-metadata@0.1.3": {
         "jspmNodeConversion": false,
         "map": {
@@ -69,11 +88,23 @@
           "process": "@empty",
           "readline": "@empty"
         }
+      },
+      "npm:typescript@1.9.0-dev.20160617-1.0": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
       }
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "jspm install"
   },
   "author": "",
   "license": "ISC"

@@ -1,1 +1,1 @@
-jspm build src/index.ts dist/build.js
+jspm build src/index.ts dist/build.js --global-name myBundle --minify
