@@ -1,10 +1,12 @@
 import 'reflect-metadata';
 import 'zone.js';
 import {myLibA} from './lib';
-import './component/all-components';
-import {Component} from '@angular/core';
+import {Component, enableProdMode} from '@angular/core';
 import {bootstrap} from '@angular/platform-browser-dynamic';
+import {AllComponent} from './component/all-components';
 // import {Observable} from 'rxjs/Rx';
+
+enableProdMode();
 
 @Component({
   selector: 'my-app',
@@ -23,6 +25,7 @@ class MyApp {
   }
 }
 
+bootstrap(AllComponent);
 bootstrap(MyApp);
 
 const x = 'foo1';

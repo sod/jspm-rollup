@@ -35,7 +35,5 @@ ${imports.join('\n')}
   directives: [${providers.join(',')}],
   template: '${directives.join('')}'
 })
-class AllComponent {}
-
-bootstrap(AllComponent);
+export class AllComponent {}
 `);

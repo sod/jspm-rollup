@@ -8,6 +8,4 @@ import {Child1Component} from './child-1-component.ts'
   directives: [Child1Component],
   template: '<child-1></child-1>'
 })
-class AllComponent {}
-
-bootstrap(AllComponent);
+export class AllComponent {}
