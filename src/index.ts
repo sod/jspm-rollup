@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import 'zone.js';
 import {myLibA} from './lib';
 import {Component, enableProdMode} from '@angular/core';
+import {CompilerConfig} from '@angular/compiler';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {AllComponent} from './component/all-components';
 // import {Observable} from 'rxjs/Rx';
@@ -25,8 +26,12 @@ class MyApp {
   }
 }
 
-bootstrap(AllComponent);
-bootstrap(MyApp);
+var prodMode = [{
+  provide: CompilerConfig, useValue: new CompilerConfig({genDebugInfo: false, logBindingUpdate: false})
+}];
+
+bootstrap(AllComponent, prodMode);
+bootstrap(MyApp, prodMode);
 
 const x = 'foo1';
 const y = 'bar2';
