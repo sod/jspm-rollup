@@ -6,7 +6,7 @@ SystemJS.config({
   paths: {
     "github:": "jspm_packages/github/",
     "npm:": "jspm_packages/npm/",
-    "jspm-17-rollup/": "src/"
+    "app/": "src/"
   },
   browserConfig: {
     "baseURL": "/"
@@ -18,7 +18,7 @@ SystemJS.config({
   },
   transpiler: "plugin-typescript",
   packages: {
-    "jspm-17-rollup": {
+    "app": {
       "main": "index.ts",
       "format": "esm",
       "defaultExtension": "ts",
