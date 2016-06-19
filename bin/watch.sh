@@ -1,1 +1,1 @@
-jspm build app dist/build.js --global-name myBundle --watch
+jspm build app dist/build.js --global-name myBundle --watch --skip-rollup
